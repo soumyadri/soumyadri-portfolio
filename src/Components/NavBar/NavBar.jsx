@@ -9,8 +9,7 @@ const Logo = styled.img`
     cursor: pointer;
 `
 
-export default function DenseAppBar() {
-
+export const DenseAppBar = () => {
   return (
     <div>
       <AppBar color="transparent" position="static">
