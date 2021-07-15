@@ -1,5 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import express from '../../Images/express.png';
+import css from '../../Images/css.png';
+import html5 from '../../Images/html5.png';
+import react from '../../Images/react.png';
+import javascript from '../../Images/javascript.png';
+import redis from '../../Images/redis.png';
+import nodejs from '../../Images/nodejs.png';
+import mongoDb from '../../Images/mongoDb.png';
 
 const SkillDiv = styled.div`
     background-color: #fff;
@@ -7,6 +15,7 @@ const SkillDiv = styled.div`
     margin: auto;
     padding: 3% 20% 3% 20%;
     display: flex;
+    flex-direction: column;
     animation-name: animation1;
     animation-duration: 2s;
 
@@ -19,6 +28,13 @@ const SkillDiv = styled.div`
         @media only screen and (max-width: 1310px) {
             flex-direction: column;
             width: 62%;
+            height: 1000px;
+        }
+
+        @media only screen and (max-width: 550px) {
+            flex-direction: column;
+            width: 62%;
+            height: 900px;
         }
     }
 `
@@ -37,32 +53,24 @@ const YellowBar = styled.div`
     height: 10px;
     background-color: yellow;
     margin: 0;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     margin-left: 20px;
 `
 
 
 const LeftDiv = styled.div`
     width: 100%;
-`
-const RigthDiv = styled.div`
-    width: 100%;
-    margin-top: 4%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 12%;
+    padding-bottom: 5%;
 
     &{
         @media only screen and (max-width: 1310px) {
-            margin-top: 0;
+            grid-template-columns: auto auto;
         }
     }
-`
-
-const SkillBar = styled.div`
-    height: 5px;
-    padding: 3px;
-    margin-top: 5px;
-    margin-left: 15px;
-    background-color: #e06b35;
-    border: 1px solid orange;
 `
 
 const InnerDiv = styled.div`
@@ -71,61 +79,49 @@ const InnerDiv = styled.div`
     margin-top : 20px;
 `
 
-const H5 = styled.h5`
-    font-size: 18px;
-    font-weight: 500;
-    color: #3b3939;
-    margin-left: auto;
-    margin-top: 0;
-    margin-right: 0.5%;
-    font-family: 'Raleway', sans-serif;
-    text-align: right;
+const Img = styled.img`
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    border-bottom: 1px solid #4b1111;
 
-    &{
-        @media only screen and (max-width: 1310px) {
-            font-size: 16px;
-            margin-right: 0;
-        }
+    &:hover{
+        transform: scaleX(102%);
     }
 `
 
 export const Skill = () => {
     return (
         <SkillDiv>
+            <H2>Technical Skill</H2>
+            <YellowBar></YellowBar>
             <LeftDiv>
-                <H2>Technical Skill</H2>
-                <YellowBar></YellowBar>
                 <InnerDiv>
-                    <SkillBar style={{width: "50%"}}></SkillBar>
-                    <H5>HTML</H5>
+                    <Img title="HTML" src={html5} alt="" />
                 </InnerDiv>
                 <InnerDiv>
-                    <SkillBar style={{width: "46%"}}></SkillBar>
-                    <H5>CSS</H5>
+                    <Img title="CSS" src={css} alt="" />
                 </InnerDiv>
                 <InnerDiv>
-                    <SkillBar style={{width: "55%"}}></SkillBar>
-                    <H5>Javascript</H5>
+                    <Img title="Javascript" src={javascript} alt="" />
+                </InnerDiv>
+                <InnerDiv>
+                    <Img title="React" src={react} alt="" />
+                </InnerDiv>
+            
+                <InnerDiv>
+                    <Img title="NodeJS" src={nodejs} alt="" />
+                </InnerDiv>
+                <InnerDiv>
+                    <Img title="Express" src={express} alt="" />
+                </InnerDiv>
+                <InnerDiv>
+                    <Img title="MongoDB" src={mongoDb} alt="" />
+                </InnerDiv>
+                <InnerDiv>
+                    <Img title="Redis" src={redis} alt="" />
                 </InnerDiv>
             </LeftDiv>
-            <RigthDiv>
-                <InnerDiv>
-                    <SkillBar style={{width: "50%"}}></SkillBar>
-                    <H5>REACT</H5>
-                </InnerDiv>
-                <InnerDiv>
-                    <SkillBar style={{width: "45%"}}></SkillBar>
-                    <H5>NODE</H5>
-                </InnerDiv>
-                <InnerDiv>
-                    <SkillBar style={{width: "42%"}}></SkillBar>
-                    <H5>MONGODB</H5>
-                </InnerDiv>
-                <InnerDiv>
-                    <SkillBar style={{width: "50%"}}></SkillBar>
-                    <H5>DATA STRUCTURE</H5>
-                </InnerDiv>
-            </RigthDiv>
         </SkillDiv>
     )
 }
