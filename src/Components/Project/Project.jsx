@@ -17,7 +17,7 @@ const ProjectContainer = styled.div`
     grid-template-columns: auto auto;
 
     &{
-        @media only screen and (max-width: 1025px) {
+        @media only screen and (max-width: 1100px) {
             flex-direction: column;
             width: 70%;
             margin-right: 0;
@@ -86,10 +86,16 @@ const H2 = styled.h2`
 
 const LeftDiv = styled.div`
     margin: auto;
-    width: 62%;
+    width: 64%;
     padding-top: 1%;
     position: relative;
     left: 15px;
+
+    &{
+        @media only screen and (max-width: 810px) {
+            width: 68%;
+        }
+    }
 `
 
 const PrimaryContainer = styled.div`
