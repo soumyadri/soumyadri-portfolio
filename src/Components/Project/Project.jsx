@@ -8,19 +8,20 @@ import M1 from '../../Images/music-1.png';
 const ProjectContainer = styled.div`
     position: relative;
     bottom: 3px;
-    width: 62%;
+    width: 63%;
     padding: 3%;
-    padding: 5% 18% 5% 20%;
+    padding: 5% 10% 5% 10%;
     margin: auto;
     display: grid;
     grid-gap: 2.5%;
     grid-template-columns: auto auto;
 
     &{
-        @media only screen and (max-width: 725px) {
+        @media only screen and (max-width: 1025px) {
             flex-direction: column;
-            width: 60%;
-            padding: 10% auto 10% auto ;
+            width: 70%;
+            margin-right: 0;
+            padding: 10% 80px 10% 80px ;
             grid-template-columns: auto;
         }
     }
@@ -38,7 +39,7 @@ const ProjectUnit = styled.div`
 
 const Img = styled.img`
     width: 100%;
-    max-width: 505px;
+    max-width: 755px;
     border-bottom: 1px solid #4b1111;
 `
 
