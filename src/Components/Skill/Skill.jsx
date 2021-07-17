@@ -11,7 +11,7 @@ import mongoDb from '../../Images/mongoDb.png';
 
 const SkillDiv = styled.div`
     background-color: #fff;
-    width: 60%;
+    width: 62%;
     margin: auto;
     padding: 3% 20% 3% 20%;
     display: flex;
@@ -45,16 +45,16 @@ const H2 = styled.h2`
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
     margin: 5px;
-    margin-left: 20px;
+    margin-left: 0px;
 `
 
 const YellowBar = styled.div`
-    width: 50%;
+    width: 30%;
     height: 10px;
     background-color: yellow;
     margin: 0;
     margin-bottom: 5%;
-    margin-left: 20px;
+    margin-left: 0px;
 `
 
 
@@ -63,7 +63,7 @@ const LeftDiv = styled.div`
     height: auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 12%;
+    grid-gap: 15%;
     padding-bottom: 5%;
 
     &{
@@ -81,12 +81,19 @@ const InnerDiv = styled.div`
 
 const Img = styled.img`
     width: 100%;
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 130px;
+    max-width: 130px;
     border-bottom: 1px solid #4b1111;
 
     &:hover{
         transform: scaleX(102%);
+    }
+
+    &{
+        @media only screen and (max-width: 1310px) {
+            max-height: 110px;
+            max-width: 110px;
+        }
     }
 `
 
