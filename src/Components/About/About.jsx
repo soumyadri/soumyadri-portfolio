@@ -5,9 +5,9 @@ const AboutDiv = styled.div`
     background-color: #e8f0f28d;
     position: relative;
     bottom: 3px;
-    width: 60%;
+    width: 65%;
     padding: 3%;
-    padding: 5% 18% 5% 22%;
+    padding: 5% 18% 5% 20%;
     margin: auto;
     display: flex;
 
