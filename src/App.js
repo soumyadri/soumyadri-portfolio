@@ -4,6 +4,7 @@ import { About } from './Components/About/About';
 import { Skill } from './Components/Skill/Skill';
 import { Project } from './Components/Project/Project';
 import {DenseAppBar} from './Components/NavBar/NavBar'
+import { Github } from './Components/Github/Github';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skill />
       <Project />
+      <Github />
     </div>
   );
 }

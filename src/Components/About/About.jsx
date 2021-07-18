@@ -7,7 +7,7 @@ const AboutDiv = styled.div`
     bottom: 3px;
     width: 65%;
     padding: 3%;
-    padding: 5% 18% 5% 20%;
+    padding: 5% 18% 5% 17%;
     margin: auto;
     display: flex;
 

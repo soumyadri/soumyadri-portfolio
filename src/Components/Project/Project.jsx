@@ -20,9 +20,9 @@ const ProjectContainer = styled.div`
         @media only screen and (max-width: 1100px) {
             flex-direction: column;
             width: 70%;
-            margin-right: 0;
-            padding: 10% 80px 10% 80px ;
+            padding: 2% 80px 25% 80px;
             grid-template-columns: auto;
+            height: auto;
         }
     }
 `
@@ -35,6 +35,12 @@ const ProjectUnit = styled.div`
     margin-top: 0%;
     margin-bottom: 2%;
     padding-bottom: 4%;
+
+    &{
+        @media only screen and (max-width: 1100px) {
+            margin-left: 1%;
+        }
+    }
 `
 
 const Img = styled.img`
