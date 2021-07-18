@@ -13,7 +13,7 @@ const SkillDiv = styled.div`
     background-color: #fff;
     width: 62%;
     margin: auto;
-    padding: 3% 20% 3% 20%;
+    padding: 3% 18% 3% 18%;
     display: flex;
     flex-direction: column;
     animation-name: animation1;
