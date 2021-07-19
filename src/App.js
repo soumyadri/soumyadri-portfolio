@@ -5,6 +5,7 @@ import { Skill } from './Components/Skill/Skill';
 import { Project } from './Components/Project/Project';
 import {DenseAppBar} from './Components/NavBar/NavBar'
 import { Github } from './Components/Github/Github';
+import { FooterComponent } from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Skill />
       <Project />
       <Github />
+      <FooterComponent />
     </div>
   );
 }

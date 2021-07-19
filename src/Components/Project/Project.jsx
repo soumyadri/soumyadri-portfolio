@@ -190,6 +190,13 @@ const Timg = styled.img`
     &:hover{
         transform: scaleX(101%);
     }
+
+    &{
+        @media only screen and (max-width: 1310px) {
+            width: 35px;
+            max-height: 35px;
+        }
+    }
 `
 export const Project = () => {
     return (
