@@ -183,9 +183,9 @@ export const Project = () => {
                     <H3>Facebook Clone</H3>
                     <H5>Facebook is a website which allows users, who sign-up for free profiles, to connect with friends, work colleagues or people they don't know, online.</H5>
                     <ButtonDiv>
-                        <ButtonGit>Github</ButtonGit>
-                        <ButtonVideo>Video</ButtonVideo>
-                        <ButtonSite>Website</ButtonSite>
+                        <ButtonGit onClick={()=>window.open("https://github.com/Darshan-Naik/facebook-clone", '_blank')}>Github</ButtonGit>
+                        <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/1ft1gFt6WGDZGWBeEVBcN4BhxEA8HZoeQ/view?usp=sharing", '_blank')}>Video</ButtonVideo>
+                        <ButtonSite onClick={()=>window.open("https://facebook-5360a.web.app/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
 
@@ -194,31 +194,31 @@ export const Project = () => {
                     <H3>Dermstore Clone</H3>
                     <H5>Dermstore was created in 1999 by a dermatologist who wanted to better serve his patients with easier access to the treatments their skin needed.</H5>
                     <ButtonDiv>
-                        <ButtonGit>Github</ButtonGit>
-                        <ButtonVideo>Video</ButtonVideo>
-                        <ButtonSite>Website</ButtonSite>
+                        <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/Dermstore_clone", '_blank')}>Github</ButtonGit>
+                        <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/17d-s6rXY4CisoGuqMjeGqUvh-pDsi3bO/view?usp=sharing", '_blank')}>Video</ButtonVideo>
+                        <ButtonSite onClick={()=>window.open("https://darshan-naik.github.io/Dermstore_clone/index.html", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
 
                 <ProjectUnit>
                     <Img src={Hj1} alt="" />
-                    <H3>Hotjar Clone</H3>
-                    <H5>Hotjar is a tool that calls itself « all-in-one », as it includes both analytics and the collection of feedback from users. This tool aims to help you understand what visitors do on your website.</H5>
+                    <H3>Examination Portal</H3>
+                    <H5>Acedemia is a examination portal. From here, any school student can give their exam online. Also they can get the result in a fraction of second.</H5>
                     <ButtonDiv>
-                        <ButtonGit>Github</ButtonGit>
-                        <ButtonVideo>Video</ButtonVideo>
-                        <ButtonSite>Website</ButtonSite>
+                        <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/webexamcollege", '_blank')}>Github</ButtonGit>
+                        <ButtonVideo onClick={()=>window.open("", '_blank')}>Video</ButtonVideo>
+                        <ButtonSite onClick={()=>window.open("https://soumyadri.github.io/webexamcollege/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
 
                 <ProjectUnit>
                     <Img src={M1} alt="" />
                     <H3>Music Instrument</H3>
-                    <H5>Through this Music Instrument site, you can create different wonderful sounds with the help of your keyboard and mouse. Best looking UI with some cool functionality is present here.</H5>
+                    <H5>Through Music Instrument site, you can create various sounds with the help of your keyboard and mouse. Best looking UI with some cool functionality is present here.</H5>
                     <ButtonDiv>
-                        <ButtonGit>Github</ButtonGit>
-                        <ButtonVideo>Video</ButtonVideo>
-                        <ButtonSite>Website</ButtonSite>
+                        <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/music-instrument", '_blank')}>Github</ButtonGit>
+                        <ButtonVideo onClick={()=>window.open("", '_blank')}>Video</ButtonVideo>
+                        <ButtonSite onClick={()=>window.open("https://soumyadri.github.io/music-instrument/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
             </ProjectContainer>
