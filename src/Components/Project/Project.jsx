@@ -2,8 +2,15 @@ import styled from 'styled-components';
 import React from 'react';
 import Fb1 from '../../Images/facebook-clone-1.png';
 import Dm1 from '../../Images/dermstore-1.png';
-import Hj1 from '../../Images/hotjar-1.png';
 import M1 from '../../Images/music-1.png';
+import E1 from '../../Images/exam1.png';
+
+import css from '../../Images/css.png';
+import html5 from '../../Images/html5.png';
+import react from '../../Images/react.png';
+import javascript from '../../Images/javascript.png';
+import firebase from '../../Images/firebase.png';
+import redux from '../../Images/redux.png';
 
 const ProjectContainer = styled.div`
     position: relative;
@@ -170,6 +177,20 @@ const H5 = styled.h5`
     justify-content: center;
 `
 
+const TechStack = styled.div`
+    display: flex;
+    margin: 2% 3% 3% 4%;
+`
+
+const Timg = styled.img`
+    width: 42px;
+    max-height: 42px;
+    margin: 1% 3% 3% 3%;
+
+    &:hover{
+        transform: scaleX(101%);
+    }
+`
 export const Project = () => {
     return (
         <PrimaryContainer>
@@ -182,6 +203,14 @@ export const Project = () => {
                     <Img src={Fb1} alt="" />
                     <H3>Facebook Clone</H3>
                     <H5>Facebook is a website which allows users, who sign-up for free profiles, to connect with friends, work colleagues or people they don't know, online.</H5>
+                    <TechStack>
+                        <Timg title="HTML" src={html5} />
+                        <Timg title="CSS" src={css} />
+                        <Timg title="JAVASCRIPT" src={javascript} />
+                        <Timg title="REACT" src={react} />
+                        <Timg title="FIREBASE" src={firebase} />
+                        <Timg title="REDUX" src={redux} />
+                    </TechStack>
                     <ButtonDiv>
                         <ButtonGit onClick={()=>window.open("https://github.com/Darshan-Naik/facebook-clone", '_blank')}>Github</ButtonGit>
                         <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/1ft1gFt6WGDZGWBeEVBcN4BhxEA8HZoeQ/view?usp=sharing", '_blank')}>Video</ButtonVideo>
@@ -193,6 +222,11 @@ export const Project = () => {
                     <Img src={Dm1} alt="" />
                     <H3>Dermstore Clone</H3>
                     <H5>Dermstore was created in 1999 by a dermatologist who wanted to better serve his patients with easier access to the treatments their skin needed.</H5>
+                    <TechStack>
+                        <Timg title="HTML5" src={html5} />
+                        <Timg title="CSS" src={css} />
+                        <Timg title="JAVASCRIPT" src={javascript} />
+                    </TechStack>
                     <ButtonDiv>
                         <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/Dermstore_clone", '_blank')}>Github</ButtonGit>
                         <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/17d-s6rXY4CisoGuqMjeGqUvh-pDsi3bO/view?usp=sharing", '_blank')}>Video</ButtonVideo>
@@ -201,9 +235,14 @@ export const Project = () => {
                 </ProjectUnit>
 
                 <ProjectUnit>
-                    <Img src={Hj1} alt="" />
+                    <Img src={E1} alt="" />
                     <H3>Examination Portal</H3>
                     <H5>Acedemia is a examination portal. From here, any school student can give their exam online. Also they can get the result in a fraction of second.</H5>
+                    <TechStack>
+                        <Timg title="HTML5" src={html5} />
+                        <Timg title="CSS" src={css} />
+                        <Timg title="JAVASCRIPT" src={javascript} />
+                    </TechStack>
                     <ButtonDiv>
                         <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/webexamcollege", '_blank')}>Github</ButtonGit>
                         <ButtonVideo onClick={()=>window.open("", '_blank')}>Video</ButtonVideo>
@@ -215,6 +254,11 @@ export const Project = () => {
                     <Img src={M1} alt="" />
                     <H3>Music Instrument</H3>
                     <H5>Through Music Instrument site, you can create various sounds with the help of your keyboard and mouse. Best looking UI with some cool functionality is present here.</H5>
+                    <TechStack>
+                        <Timg title="HTML5" src={html5} />
+                        <Timg title="CSS" src={css} />
+                        <Timg title="JAVASCRIPT" src={javascript} />
+                    </TechStack>
                     <ButtonDiv>
                         <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/music-instrument", '_blank')}>Github</ButtonGit>
                         <ButtonVideo onClick={()=>window.open("", '_blank')}>Video</ButtonVideo>
