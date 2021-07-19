@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Soumyadri from '../../Images/soumyadri-linkdin.png';
 
 const PrimaryContainer = styled.div`
-    width: 60%;
+    width: 62%;
     margin: auto;
     display: flex;
 
@@ -54,7 +54,7 @@ const H2 = styled.h2`
 const H4 = styled.h4`
     font-size: 22px;
     font-weight: 500;
-    color: #3b3939;
+    color: #5f0808;
     margin: 8px;
     margin-top: 3%;
     font-family: 'Raleway', sans-serif;
@@ -66,19 +66,8 @@ const H4 = styled.h4`
     }
 `
 
-const Button = styled.div`
-    padding: 8px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 10%;
-    width: 150px;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #ffd20a;
-`
-
 const Img = styled.img`
-    margin-left: 35%;
+    margin-left: 36%;
     width: 95%;
     animation-name: animation1;
     animation-duration: 2s;
@@ -101,9 +90,8 @@ export const Intro = () => {
         <PrimaryContainer>
             <div>
                 <H5>Hello</H5>
-                <H2>I'm Soumyadri</H2>
+                <H2>I'm <span style={{color: "#942828"}}>Soumyadri</span></H2>
                 <H4>Full Stack Web Developer</H4>
-                <Button>View Work</Button>
             </div>
             <div>
                 <Img src={Soumyadri} alt="" />
