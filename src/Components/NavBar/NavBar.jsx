@@ -8,6 +8,10 @@ const Logo = styled.img`
     height: 70px;
     margin-left: 19%;
     cursor: pointer;
+
+    &:hover{
+      transform: scale(102%);
+    }
 `
 
 const Logo1 = styled.img`
@@ -17,6 +21,10 @@ const Logo1 = styled.img`
     margin-right: 2%;
     margin-top: 15px;
     cursor: pointer;
+
+    &:hover{
+      transform: scale(102%);
+    }
 `
 
 const Logo2 = styled.img`
@@ -26,6 +34,10 @@ const Logo2 = styled.img`
     margin-right: 20%;
     margin-top: 15px;
     cursor: pointer;
+
+    &:hover{
+      transform: scale(102%);
+    }
 `
 
 const AppBar = styled.div`
@@ -45,9 +57,9 @@ export const DenseAppBar = () => {
   return (
     <div>
       <AppBar color="transparent" position="static">
-        <Logo className="logo-image" src="https://st2.depositphotos.com/3867453/5745/v/600/depositphotos_57451535-stock-illustration-letter-s-logo-icon-design.jpg" alt="" />
-        <Logo1 onClick={handleClick1} src={LinkLogo} />
-        <Logo2 onClick={handleClick2} src={gitLogo} />
+        <Logo title="Soumyadri" className="logo-image" src="https://st2.depositphotos.com/3867453/5745/v/600/depositphotos_57451535-stock-illustration-letter-s-logo-icon-design.jpg" alt="" />
+        <Logo1 title="Linkdin" onClick={handleClick1} src={LinkLogo} />
+        <Logo2 title="Github" onClick={handleClick2} src={gitLogo} />
       </AppBar>
     </div>
   );
