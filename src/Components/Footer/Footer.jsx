@@ -10,6 +10,7 @@ const Footer = styled.div`
     padding: 0 18%;
     font-size: 20px;
     display: flex;
+    font-weight: 600;
 
     &{
         @media only screen and (max-width: 810px) {
@@ -23,16 +24,22 @@ const Phone = styled.div`
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 1%;
 `
 
 const H5 = styled.h5`
-    font-size: 15px;
+    font-size: 14px;
     width: 300px;
     padding-left: 3%;
     margin: 0;
     font-weight: 500;
+    line-height: 1.7;
+
+    &:hover{
+        transform: scale(101%);
+    }
 `
 
 const Img = styled.img`
@@ -41,9 +48,20 @@ const Img = styled.img`
 `
 
 const Container = styled.div`
-    width: 80%;
-    margin-top: 4%;
-    margin-bottom: 2%;
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+
+    &{
+        @media only screen and (max-width: 810px) {
+            width: 85%;
+        }
+    }
+`
+
+const A = styled.a`
+    text-decoration: none;
+    color: white;
 `
 
 export const FooterComponent = () => {
@@ -53,11 +71,11 @@ export const FooterComponent = () => {
                 Contact: 
                 <Phone>
                     <Img src={phone} alt="" />
-                    <H5>8910753874</H5>
+                    <H5><A href="tel:8910753874">8910753874</A></H5>
                 </Phone>
                 <Phone>
                     <Img src={email} alt="" />
-                    <H5>soumyadridas@yahoo.com</H5>
+                    <H5><A href="mailto:soumyadridas@yahoo.com">soumyadridas@yahoo.com</A></H5>
                 </Phone>
             </Container>
             <Container>
