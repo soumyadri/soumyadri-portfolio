@@ -85,6 +85,22 @@ const Img = styled.img`
     }
 `
 
+const Button = styled.button`
+    background-color: #ffb62f;
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ffb62d;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #f8a711f0;
+    }
+`
+
 export const Intro = () => {
     return (
         <PrimaryContainer>
@@ -92,6 +108,7 @@ export const Intro = () => {
                 <H5>Hello</H5>
                 <H2>I'm <span style={{color: "#942828"}}>Soumyadri</span></H2>
                 <H4>Full Stack Web Developer</H4>
+                <Button onClick={()=>window.open("https://drive.google.com/file/d/1ruWvcB0h3Zd2FoflSv7wcWjWXNfd8is8/view?usp=sharing", '_blank')}>View Resume</Button>
             </div>
             <div>
                 <Img src={Soumyadri} alt="" />
