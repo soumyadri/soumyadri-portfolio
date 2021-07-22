@@ -26,7 +26,7 @@ const Img = styled.img`
     border-bottom: 1px solid #4b1111;
 
     &:hover{
-        transform: scaleX(101%);
+        transform: scaleX(100.5%);
     }
 
     &{

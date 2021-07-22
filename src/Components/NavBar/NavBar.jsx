@@ -7,16 +7,12 @@ const Logo = styled.img`
     width: 70px;
     height: 70px;
     margin-left: 19%;
-    cursor: pointer;
-
-    &:hover{
-      transform: scale(102%);
-    }
 `
 
 const Logo1 = styled.img`
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: 2%;
     margin-top: 15px;
@@ -28,8 +24,8 @@ const Logo1 = styled.img`
 `
 
 const Logo2 = styled.img`
-    width: 40px;
-    height: 40px;
+    width: 37px;
+    height: 37px;
     margin-left: 2%;
     margin-right: 20%;
     margin-top: 15px;

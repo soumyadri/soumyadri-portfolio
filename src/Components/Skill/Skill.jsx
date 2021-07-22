@@ -67,8 +67,9 @@ const LeftDiv = styled.div`
     padding-bottom: 5%;
 
     &{
-        @media only screen and (max-width: 1310px) {
+        @media only screen and (max-width: 1110px) {
             grid-template-columns: auto auto;
+            grid-gap: 15%;
         }
     }
 `
@@ -83,10 +84,10 @@ const Img = styled.img`
     width: 100%;
     max-height: 130px;
     max-width: 130px;
-    border-bottom: 1px solid #4b1111;
+    
 
     &:hover{
-        transform: scaleX(102%);
+        transform: scaleX(101%);
     }
 
     &{
@@ -100,7 +101,7 @@ const Img = styled.img`
 export const Skill = () => {
     return (
         <SkillDiv>
-            <H2>Technical Skill</H2>
+            <H2>Technical Skills</H2>
             <YellowBar></YellowBar>
             <LeftDiv>
                 <InnerDiv>
