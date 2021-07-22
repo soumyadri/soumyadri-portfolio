@@ -26,7 +26,7 @@ const ProjectContainer = styled.div`
     &{
         @media only screen and (max-width: 1100px) {
             flex-direction: column;
-            width: 70%;
+            width: 75%;
             padding: 2% 80px 30% 80px;
             grid-template-columns: auto;
             height: auto;
@@ -45,15 +45,22 @@ const ProjectUnit = styled.div`
 
     &{
         @media only screen and (max-width: 1100px) {
-            margin-left: 1%;
+            margin-left: 0;
         }
     }
 `
 
 const Img = styled.img`
     width: 100%;
+    max-height: 217px;
     max-width: 755px;
     border-bottom: 1px solid #4b1111;
+
+    &{
+        @media only screen and (max-width: 1100px) {
+            max-height: 100%;
+        }
+    }
 `
 
 const H3 = styled.div`
@@ -131,9 +138,11 @@ const ButtonGit = styled.button`
     border-radius: 25px;
     font-weight: 500;
     cursor: pointer;
+    border: 1px solid yellowgreen;
 
     &:hover{
         transform: scaleX(103%);
+        background-color: #ff9419e2;
     }
 `
 
@@ -146,9 +155,11 @@ const ButtonVideo = styled.button`
     border-radius: 25px;
     font-weight: 500;
     cursor: pointer;
+    border: 1px solid yellowgreen;
 
     &:hover{
         transform: scaleX(103%);
+        background-color: #ff9419e2;
     }
 `
 
@@ -161,9 +172,11 @@ const ButtonSite = styled.button`
     border-radius: 25px;
     font-weight: 600;
     cursor: pointer;
+    border: 1px solid yellowgreen;
 
     &:hover{
         transform: scaleX(103%);
+        background-color: #ff9419e2;
     }
 `
 
@@ -171,7 +184,7 @@ const H5 = styled.h5`
     font-size: 16px;
     font-weight: 500;
     color: #3b3939;
-    margin: 18px;
+    margin: 15px;
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     justify-content: center;
@@ -193,8 +206,9 @@ const Timg = styled.img`
 
     &{
         @media only screen and (max-width: 1310px) {
-            width: 35px;
-            max-height: 35px;
+            width: 32px;
+            max-height: 32px;
+            margin: 1% 2% 3% 3%;
         }
     }
 `
@@ -252,7 +266,7 @@ export const Project = () => {
                     </TechStack>
                     <ButtonDiv>
                         <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/webexamcollege", '_blank')}>Github</ButtonGit>
-                        <ButtonVideo onClick={()=>window.open("", '_blank')}>Video</ButtonVideo>
+                        <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/1SwlVHmaWgg3ZzZzjsXTU0ACkB6XpHEjO/view?usp=sharing", '_blank')}>Video</ButtonVideo>
                         <ButtonSite onClick={()=>window.open("https://soumyadri.github.io/webexamcollege/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
@@ -260,7 +274,7 @@ export const Project = () => {
                 <ProjectUnit>
                     <Img src={M1} alt="" />
                     <H3>Music Instrument</H3>
-                    <H5>Through Music Instrument site, you can create various sounds with the help of your keyboard and mouse. Best looking UI with some cool functionality is present here.</H5>
+                    <H5>Through Music Instrument site, you can create various sounds with the help of your keyboard and mouse. Best looking UI with some cool functionality.</H5>
                     <TechStack>
                         <Timg title="HTML5" src={html5} />
                         <Timg title="CSS" src={css} />
@@ -268,7 +282,7 @@ export const Project = () => {
                     </TechStack>
                     <ButtonDiv>
                         <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/music-instrument", '_blank')}>Github</ButtonGit>
-                        <ButtonVideo onClick={()=>window.open("", '_blank')}>Video</ButtonVideo>
+                        <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/1LYRNjZTR-1eebYHrjsyYaeVmnMdm1zBW/view", '_blank')}>Video</ButtonVideo>
                         <ButtonSite onClick={()=>window.open("https://soumyadri.github.io/music-instrument/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
