@@ -25,10 +25,10 @@ const SkillDiv = styled.div`
     }
     
     &{
-        @media only screen and (max-width: 1310px) {
+        @media only screen and (max-width: 1110px) {
             flex-direction: column;
             width: 62%;
-            height: 1000px;
+            height: 950px;
         }
 
         @media only screen and (max-width: 550px) {
