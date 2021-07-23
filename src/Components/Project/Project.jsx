@@ -37,8 +37,8 @@ const ProjectContainer = styled.div`
 const ProjectUnit = styled.div`
     width: 100%;
     height: auto;
-    background-color: #eafaf8;
-    border: 2px solid #adacac;
+    background-color: #ffffff6a;
+    border: 2px solid #c2c1c1;
     margin-top: 0%;
     margin-bottom: 2%;
     padding-bottom: 4%;
@@ -131,52 +131,52 @@ const ButtonDiv = styled.div`
 
 const ButtonGit = styled.button`
     padding: 10px 5px;
-    background-color: #ff9419;
-    color: white;
+    background-color: #f8cc3a;
+    color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     border-radius: 25px;
     font-weight: 500;
     cursor: pointer;
-    border: 1px solid yellowgreen;
+    border: 1px solid #f8cc3a;
 
     &:hover{
         transform: scaleX(103%);
-        background-color: #ff9419e2;
+        background-color: #f7c82d;
     }
 `
 
 const ButtonVideo = styled.button`
     padding: 10px 5px;
-    background-color: #ff9419;
-    color: white;
+    background-color: #f8cc3a;
+    color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     border-radius: 25px;
     font-weight: 500;
     cursor: pointer;
-    border: 1px solid yellowgreen;
+    border: 1px solid #f8cc3a;
 
     &:hover{
         transform: scaleX(103%);
-        background-color: #ff9419e2;
+        background-color: #f7c82d;
     }
 `
 
 const ButtonSite = styled.button`
     padding: 10px 5px;
-    background-color: #ff9419;
-    color: white;
+    background-color: #f8cc3a;
+    color: black;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 25px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
-    border: 1px solid yellowgreen;
+    border: 1px solid #f8cc3a;
 
     &:hover{
         transform: scaleX(103%);
-        background-color: #ff9419e2;
+        background-color: #f7c82d;
     }
 `
 
@@ -187,7 +187,8 @@ const H5 = styled.h5`
     margin: 15px;
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
-    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
 `
 
 const TechStack = styled.div`
@@ -258,7 +259,7 @@ export const Project = () => {
                 <ProjectUnit>
                     <Img src={E1} alt="" />
                     <H3>Examination Portal</H3>
-                    <H5>Acedemia is a examination portal. From here, any school student can give their exam online. Also they can get the result in a fraction of second.</H5>
+                    <H5>Acedemia is a exam portal. From here, any school student can give their exam online. Also they can get the result in a second.</H5>
                     <TechStack>
                         <Timg title="HTML5" src={html5} />
                         <Timg title="CSS" src={css} />
@@ -274,7 +275,7 @@ export const Project = () => {
                 <ProjectUnit>
                     <Img src={M1} alt="" />
                     <H3>Music Instrument</H3>
-                    <H5>Through Music Instrument site, you can create various sounds with the help of your keyboard and mouse. Best looking UI with some cool functionality.</H5>
+                    <H5>Drum Kit is a music instrument website. From here, you can create different sounds with the help of your keyboard.</H5>
                     <TechStack>
                         <Timg title="HTML5" src={html5} />
                         <Timg title="CSS" src={css} />

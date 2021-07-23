@@ -86,18 +86,20 @@ const Img = styled.img`
 `
 
 const Button = styled.button`
-    background-color: #ffb62f;
-    color: white;
-    font-size: 17px;
+    background-color: #f8cc3a;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
     margin-left: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 10px;
-    border: 1px solid #ffb62d;
+    border: 1px solid #f8cc3a;
     margin-top: 10px;
     cursor: pointer;
 
     &:hover{
-        background-color: #f8a711f0;
+        background-color: #f5c62a;
     }
 `
 
