@@ -17,3 +17,7 @@ At its most basic form, a portfolio website provides professional information ab
 2. To run in your local system 
    * Clone the source code from - https://github.com/soumyadri/soumyadri-portfolio
    * Run the command  **npm i** (To install the necessary package)
+
+## Snapshot
+
+![portfolio](https://github.com/soumyadri/soumyadri-portfolio/blob/master/src/Images/portfolio1.png)
