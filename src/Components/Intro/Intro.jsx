@@ -6,6 +6,7 @@ const PrimaryContainer = styled.div`
     width: 62%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
 
     &{
         @media only screen and (max-width: 1010px) {
@@ -67,7 +68,6 @@ const H4 = styled.h4`
 `
 
 const Img = styled.img`
-    margin-left: 36%;
     width: 95%;
     animation-name: animation1;
     animation-duration: 2s;
@@ -110,7 +110,7 @@ export const Intro = () => {
                 <H5>Hello</H5>
                 <H2>I'm <span style={{color: "#942828"}}>Soumyadri</span></H2>
                 <H4>Full Stack Web Developer</H4>
-                <Button onClick={()=>window.open("https://drive.google.com/file/d/1ruWvcB0h3Zd2FoflSv7wcWjWXNfd8is8/view?usp=sharing", '_blank')}>View Resume</Button>
+                <Button onClick={()=>window.open("https://www.canva.com/design/DAEigNO6FIs/DCwM_hzWddQ_-g2Vpfn9sA/view?utm_content=DAEigNO6FIs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton", '_blank')}>View Resume</Button>
             </div>
             <div>
                 <Img src={Soumyadri} alt="" />
