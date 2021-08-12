@@ -26,7 +26,6 @@ const ProjectContainer = styled.div`
     &{
         @media only screen and (max-width: 1100px) {
             flex-direction: column;
-            width: 75%;
             padding: 2% 80px 30% 80px;
             grid-template-columns: auto;
             height: auto;
