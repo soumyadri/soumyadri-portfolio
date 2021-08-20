@@ -26,7 +26,6 @@ const ProjectContainer = styled.div`
     &{
         @media only screen and (max-width: 1100px) {
             flex-direction: column;
-            width: 75%;
             padding: 2% 80px 30% 80px;
             grid-template-columns: auto;
             height: auto;
@@ -236,7 +235,7 @@ export const Project = () => {
                     <ButtonDiv>
                         <ButtonGit onClick={()=>window.open("https://github.com/Darshan-Naik/facebook-clone", '_blank')}>Github</ButtonGit>
                         <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/1ft1gFt6WGDZGWBeEVBcN4BhxEA8HZoeQ/view?usp=sharing", '_blank')}>Video</ButtonVideo>
-                        <ButtonSite onClick={()=>window.open("https://facebook-5360a.web.app/", '_blank')}>Website</ButtonSite>
+                        <ButtonSite onClick={()=>window.open("https://facebook-13e21.web.app/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
 

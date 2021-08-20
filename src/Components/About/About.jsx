@@ -77,7 +77,7 @@ export const About = () => {
                 <YellowBar></YellowBar>
             </LeftDiv>
             <RightDiv>
-                <H5>Bachelors Of Computer Application graduate skilled in frontend and backend technologies. Interested to join in a product-based startup, curious to write production-based code. Love to take up challenges and am curious to learn new things. Hobby is to playing football and learning some interesting facts about finance.</H5>
+                <H5>Bachelors Of Computer Application graduate skilled in frontend and backend technologies. Eager to join a product-based startup, excited to write production-based code. Love to take up challenges, always enthusiastic to work with the team. Hobby is to playing football and a special area of interest in financial markets.</H5>
             </RightDiv>
         </AboutDiv>
     )
