@@ -8,6 +8,7 @@ import javascript from '../../Images/javascript.png';
 import redis from '../../Images/redis.png';
 import nodejs from '../../Images/nodejs.png';
 import mongoDb from '../../Images/mongoDb.png';
+import LazyLoad from 'react-lazyload';
 
 const SkillDiv = styled.div`
     background-color: #fff;
@@ -100,36 +101,38 @@ const Img = styled.img`
 
 export const Skill = () => {
     return (
-        <SkillDiv>
-            <H2>Technical Skills</H2>
-            <YellowBar></YellowBar>
-            <LeftDiv>
-                <InnerDiv>
-                    <Img title="HTML" src={html5} alt="" />
-                </InnerDiv>
-                <InnerDiv>
-                    <Img title="CSS" src={css} alt="" />
-                </InnerDiv>
-                <InnerDiv>
-                    <Img title="Javascript" src={javascript} alt="" />
-                </InnerDiv>
-                <InnerDiv>
-                    <Img title="React" src={react} alt="" />
-                </InnerDiv>
-            
-                <InnerDiv>
-                    <Img title="NodeJS" src={nodejs} alt="" />
-                </InnerDiv>
-                <InnerDiv>
-                    <Img title="Express" src={express} alt="" />
-                </InnerDiv>
-                <InnerDiv>
-                    <Img title="MongoDB" src={mongoDb} alt="" />
-                </InnerDiv>
-                <InnerDiv>
-                    <Img title="Redis" src={redis} alt="" />
-                </InnerDiv>
-            </LeftDiv>
-        </SkillDiv>
+        <LazyLoad>
+            <SkillDiv>
+                <H2>Technical Skills</H2>
+                <YellowBar></YellowBar>
+                <LeftDiv>
+                    <InnerDiv>
+                        <Img title="HTML" src={html5} alt="" />
+                    </InnerDiv>
+                    <InnerDiv>
+                        <Img title="CSS" src={css} alt="" />
+                    </InnerDiv>
+                    <InnerDiv>
+                        <Img title="Javascript" src={javascript} alt="" />
+                    </InnerDiv>
+                    <InnerDiv>
+                        <Img title="React" src={react} alt="" />
+                    </InnerDiv>
+                
+                    <InnerDiv>
+                        <Img title="NodeJS" src={nodejs} alt="" />
+                    </InnerDiv>
+                    <InnerDiv>
+                        <Img title="Express" src={express} alt="" />
+                    </InnerDiv>
+                    <InnerDiv>
+                        <Img title="MongoDB" src={mongoDb} alt="" />
+                    </InnerDiv>
+                    <InnerDiv>
+                        <Img title="Redis" src={redis} alt="" />
+                    </InnerDiv>
+                </LeftDiv>
+            </SkillDiv>
+        </LazyLoad>
     )
 }

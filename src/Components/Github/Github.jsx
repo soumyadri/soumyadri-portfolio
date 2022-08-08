@@ -1,6 +1,7 @@
 import React from 'react';
 import Git from '../../Images/gitContribution.png';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 
 const GitDiv = styled.div`
     background-color: #ffffff;
@@ -79,12 +80,14 @@ const LeftDiv = styled.div`
 
 export const Github = () => {
     return (
-        <GitDiv>
-            <LeftDiv>
-                <H2>Github Contribution</H2>
-                <YellowBar></YellowBar>
-            </LeftDiv>
-            <Img src={Git} alt="" />
-        </GitDiv>
+        <LazyLoad>
+            <GitDiv>
+                <LeftDiv>
+                    <H2>Github Contribution</H2>
+                    <YellowBar></YellowBar>
+                </LeftDiv>
+                <Img src={Git} alt="" />
+            </GitDiv>
+        </LazyLoad>
     )
 }

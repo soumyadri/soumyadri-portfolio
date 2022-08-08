@@ -30,7 +30,7 @@ const H5 = styled.h5`
     }
 `
 
-const H2 = styled.h2`
+const H2 = styled.h1`
     font-size: 55px;
     font-weight: 700;
     color: #3b3939;
@@ -52,7 +52,7 @@ const H2 = styled.h2`
     }
 `
 
-const H4 = styled.h4`
+const H4 = styled.h2`
     font-size: 22px;
     font-weight: 500;
     color: #5f0808;
@@ -86,20 +86,20 @@ const Img = styled.img`
 `
 
 const Button = styled.button`
-    background-color: #f8cc3a;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
+    background-color: #105fe8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
     font-family: 'Raleway', sans-serif;
     margin-left: 10px;
     border-radius: 6px;
-    padding: 10px;
-    border: 1px solid #f8cc3a;
+    padding: 10px 15px;
+    border: 1px solid #0b55d6;
     margin-top: 10px;
     cursor: pointer;
 
     &:hover{
-        background-color: #f5c62a;
+        background-color: #145ede;
     }
 `
 
@@ -107,13 +107,13 @@ export const Intro = () => {
     return (
         <PrimaryContainer>
             <div>
-                <H5>Hello</H5>
+                <H5>Hi</H5>
                 <H2>I'm <span style={{color: "#942828"}}>Soumyadri</span></H2>
                 <H4>Full Stack Web Developer</H4>
                 <Button onClick={()=>window.open("https://www.canva.com/design/DAEigNO6FIs/DCwM_hzWddQ_-g2Vpfn9sA/view?utm_content=DAEigNO6FIs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton", '_blank')}>View Resume</Button>
             </div>
             <div>
-                <Img src={Soumyadri} alt="" />
+                <Img src={Soumyadri} alt="soumyadri das photo" loading="lazy" />
             </div>
         </PrimaryContainer>
     )

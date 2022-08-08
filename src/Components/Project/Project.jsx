@@ -221,7 +221,7 @@ export const Project = () => {
             </LeftDiv>
             <ProjectContainer>
                 <ProjectUnit>
-                    <Img src={Fb1} alt="" />
+                    <Img src={Fb1} alt="" loading="lazy" />
                     <H3>Facebook Clone</H3>
                     <H5>Facebook is a website which allows users, who sign-up for free profiles, to connect with friends, work colleagues or people they don't know, online.</H5>
                     <TechStack>
@@ -240,7 +240,7 @@ export const Project = () => {
                 </ProjectUnit>
 
                 <ProjectUnit>
-                    <Img src={Dm1} alt="" />
+                    <Img src={Dm1} alt="" loading="lazy" />
                     <H3>Dermstore Clone</H3>
                     <H5>Dermstore was created in 1999 by a dermatologist who wanted to better serve his patients with easier access to the treatments their skin needed.</H5>
                     <TechStack>
@@ -256,7 +256,7 @@ export const Project = () => {
                 </ProjectUnit>
 
                 <ProjectUnit>
-                    <Img src={E1} alt="" />
+                    <Img src={E1} alt="Examination project Soumyadri" loading="lazy" />
                     <H3>Examination Portal</H3>
                     <H5>Acedemia is a exam portal. From here, any school student can give their exam online. Also they can get the result in a second.</H5>
                     <TechStack>
@@ -272,7 +272,7 @@ export const Project = () => {
                 </ProjectUnit>
 
                 <ProjectUnit>
-                    <Img src={M1} alt="" />
+                    <Img src={M1} alt="Drum Kit Soumyadri Das" loading="lazy" />
                     <H3>Music Instrument</H3>
                     <H5>Drum Kit is a music instrument website. From here, you can create different sounds with the help of your keyboard.</H5>
                     <TechStack>

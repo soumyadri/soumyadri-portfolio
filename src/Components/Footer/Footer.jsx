@@ -29,7 +29,7 @@ const Phone = styled.div`
     margin-bottom: 1%;
 `
 
-const H5 = styled.h5`
+const H5 = styled.h4`
     font-size: 14px;
     width: 300px;
     padding-left: 3%;
@@ -70,19 +70,22 @@ export const FooterComponent = () => {
             <Container>
                 Contact: 
                 <Phone>
-                    <Img src={phone} alt="" />
+                    <Img src={phone} alt="" loading="lazy" />
                     <H5><A href="tel:8910753874">8910753874</A></H5>
                 </Phone>
                 <Phone>
-                    <Img src={email} alt="" />
+                    <Img src={email} alt="" loading="lazy" />
                     <H5><A href="mailto:soumyadridas@yahoo.com">soumyadridas@yahoo.com</A></H5>
                 </Phone>
             </Container>
             <Container>
                 Address: 
                 <Phone>
-                    <Img src={home} alt="" />
-                    <H5>100 BGG SARANI BHADRAKALI UTTARPARA, WEST BENGAL PIN - 712232</H5>
+                    <Img src={home} alt="" loading="lazy" />
+                    <H5>KOLKATA, WEST BENGAL PIN - 712232</H5>
+                </Phone>
+                <Phone>
+                    <H5>@Copyright Soumyadri Das</H5>
                 </Phone>
             </Container>
         </Footer>
