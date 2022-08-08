@@ -18,7 +18,7 @@ const SkillDiv = styled.div`
     display: flex;
     flex-direction: column;
     animation-name: animation1;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 
     @keyframes animation1 {
         from {opacity: 0;}
