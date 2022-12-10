@@ -59,8 +59,15 @@ const H5 = styled.h4`
     font-weight: 600;
     color: #3b3939;
     margin: 8px;
+    line-height: 1.5;
     font-family: 'Raleway', sans-serif;
     justify-content: center;
+
+    &{
+        @media only screen and (max-width: 780px) {
+            line-height: 1.2;
+        }
+    }
 `
 
 const RightDiv = styled.div`
@@ -77,7 +84,7 @@ export const About = () => {
                 <YellowBar></YellowBar>
             </LeftDiv>
             <RightDiv>
-                <H5>Bachelors Of Computer Application graduate skilled in frontend and backend technologies. Eager to learn a new technologies, always excited to write production level code. Love to take up challenges, always enthusiastic to work with the team. Soumyadri's hobby is to playing football and a special area of interest in financial markets.</H5>
+                <H5>Bachelors Of Computer Application graduate skilled in frontend and backend technologies. Passionate to learn about new technologies and love to take up challenges, always enthusiastic to work with the team. Soumyadri's hobby is to playing football and a special area of interest in financial markets.</H5>
             </RightDiv>
         </AboutDiv>
     )

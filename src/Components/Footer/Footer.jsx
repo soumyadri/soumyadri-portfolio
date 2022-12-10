@@ -75,7 +75,7 @@ export const FooterComponent = () => {
                 </Phone>
                 <Phone>
                     <Img src={email} alt="" loading="lazy" />
-                    <H5><A href="mailto:soumyadridas@yahoo.com">soumyadridas@yahoo.com</A></H5>
+                    <H5><A href="mailto:soumyadri30@gmail.com">soumyadri30@gmail.com</A></H5>
                 </Phone>
             </Container>
             <Container>
@@ -85,7 +85,7 @@ export const FooterComponent = () => {
                     <H5>KOLKATA, WEST BENGAL PIN - 712232</H5>
                 </Phone>
                 <Phone>
-                    <H5>@Copyright Soumyadri Das</H5>
+                    <H5>@ Copyright Soumyadri Das</H5>
                 </Phone>
             </Container>
         </Footer>

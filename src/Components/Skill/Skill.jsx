@@ -5,9 +5,11 @@ import css from '../../Images/css.png';
 import html5 from '../../Images/html5.png';
 import react from '../../Images/react.png';
 import javascript from '../../Images/javascript.png';
-import redis from '../../Images/redis.png';
 import nodejs from '../../Images/nodejs.png';
 import mongoDb from '../../Images/mongoDb.png';
+import redux from '../../Images/redux.png';
+import materialUi from '../../Images/material-ui.png';
+import tailwind from '../../Images/tailwind.jpg';
 import LazyLoad from 'react-lazyload';
 
 const SkillDiv = styled.div`
@@ -29,13 +31,25 @@ const SkillDiv = styled.div`
         @media only screen and (max-width: 1110px) {
             flex-direction: column;
             width: 62%;
-            height: 950px;
+            height: 800px;
+        }
+
+        @media only screen and (max-width: 780px) {
+            flex-direction: column;
+            width: 62%;
+            height: 750px;
         }
 
         @media only screen and (max-width: 550px) {
             flex-direction: column;
             width: 62%;
-            height: 900px;
+            height: 600px;
+        }
+
+        @media only screen and (max-width: 350px) {
+            flex-direction: column;
+            width: 62%;
+            height: 500px;
         }
     }
 `
@@ -63,14 +77,14 @@ const LeftDiv = styled.div`
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 15%;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10%;
     padding-bottom: 5%;
 
     &{
         @media only screen and (max-width: 1110px) {
-            grid-template-columns: auto auto;
-            grid-gap: 15%;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10%;
         }
     }
 `
@@ -118,6 +132,9 @@ export const Skill = () => {
                     <InnerDiv>
                         <Img title="React" src={react} alt="" />
                     </InnerDiv>
+                    <InnerDiv>
+                        <Img title="Redux" src={redux} alt="" />
+                    </InnerDiv>
                 
                     <InnerDiv>
                         <Img title="NodeJS" src={nodejs} alt="" />
@@ -129,7 +146,10 @@ export const Skill = () => {
                         <Img title="MongoDB" src={mongoDb} alt="" />
                     </InnerDiv>
                     <InnerDiv>
-                        <Img title="Redis" src={redis} alt="" />
+                        <Img title="Material UI" src={materialUi} alt="" />
+                    </InnerDiv>
+                    <InnerDiv>
+                        <Img title="Tailwind CSS" src={tailwind} alt="" />
                     </InnerDiv>
                 </LeftDiv>
             </SkillDiv>

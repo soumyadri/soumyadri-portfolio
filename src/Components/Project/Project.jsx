@@ -4,11 +4,15 @@ import Fb1 from '../../Images/facebook-clone-1.png';
 import Dm1 from '../../Images/dermstore-1.png';
 import M1 from '../../Images/music-1.png';
 import E1 from '../../Images/exam1.png';
-
+import homepage from '../../Images/homepage.png';
+import express from '../../Images/express.png';
 import css from '../../Images/css.png';
 import html5 from '../../Images/html5.png';
 import react from '../../Images/react.png';
 import javascript from '../../Images/javascript.png';
+import nodejs from '../../Images/nodejs.png';
+import mongoDb from '../../Images/mongoDb.png';
+import tailwind from '../../Images/tailwind.jpg';
 import firebase from '../../Images/firebase.png';
 import redux from '../../Images/redux.png';
 
@@ -193,6 +197,13 @@ const H5 = styled.h5`
 const TechStack = styled.div`
     display: flex;
     margin: 2% 3% 3% 4%;
+    width: 90%;
+    height: 67px;
+    overflow-x: auto;
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
 `
 
 const Timg = styled.img`
@@ -220,7 +231,7 @@ export const Project = () => {
                 <YellowBar></YellowBar>
             </LeftDiv>
             <ProjectContainer>
-                <ProjectUnit>
+                {/* <ProjectUnit>
                     <Img src={Fb1} alt="" loading="lazy" />
                     <H3>Facebook Clone</H3>
                     <H5>Facebook is a website which allows users, who sign-up for free profiles, to connect with friends, work colleagues or people they don't know, online.</H5>
@@ -237,9 +248,9 @@ export const Project = () => {
                         <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/1ft1gFt6WGDZGWBeEVBcN4BhxEA8HZoeQ/view?usp=sharing", '_blank')}>Video</ButtonVideo>
                         <ButtonSite onClick={()=>window.open("https://facebook-13e21.web.app/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
-                </ProjectUnit>
+                </ProjectUnit> */}
 
-                <ProjectUnit>
+                {/* <ProjectUnit>
                     <Img src={Dm1} alt="" loading="lazy" />
                     <H3>Dermstore Clone</H3>
                     <H5>Dermstore was created in 1999 by a dermatologist who wanted to better serve his patients with easier access to the treatments their skin needed.</H5>
@@ -253,21 +264,26 @@ export const Project = () => {
                         <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/17d-s6rXY4CisoGuqMjeGqUvh-pDsi3bO/view?usp=sharing", '_blank')}>Video</ButtonVideo>
                         <ButtonSite onClick={()=>window.open("https://darshan-naik.github.io/Dermstore_clone/index.html", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
-                </ProjectUnit>
+                </ProjectUnit> */}
 
                 <ProjectUnit>
-                    <Img src={E1} alt="Examination project Soumyadri" loading="lazy" />
+                    <Img src={homepage} alt="Examination project Soumyadri" loading="lazy" />
                     <H3>Examination Portal</H3>
                     <H5>Acedemia is a exam portal. From here, any school student can give their exam online. Also they can get the result in a second.</H5>
                     <TechStack>
-                        <Timg title="HTML5" src={html5} />
+                        <Timg title="HTML" src={html5} />
                         <Timg title="CSS" src={css} />
                         <Timg title="JAVASCRIPT" src={javascript} />
+                        <Timg title="REACT" src={react} />
+                        <Timg title="NODE" src={nodejs} />
+                        <Timg title="EXPRESS" src={express} />
+                        <Timg title="MONGODB" src={mongoDb} />
+                        <Timg title="TAILWIND" src={tailwind} />
                     </TechStack>
                     <ButtonDiv>
-                        <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/webexamcollege", '_blank')}>Github</ButtonGit>
-                        <ButtonVideo onClick={()=>window.open("https://drive.google.com/file/d/1SwlVHmaWgg3ZzZzjsXTU0ACkB6XpHEjO/view?usp=sharing", '_blank')}>Video</ButtonVideo>
-                        <ButtonSite onClick={()=>window.open("https://soumyadri.github.io/webexamcollege/", '_blank')}>Website</ButtonSite>
+                        <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/web-frontend", '_blank')}>Frontend</ButtonGit>
+                        <ButtonGit onClick={()=>window.open("https://github.com/soumyadri/backend-exam", '_blank')}>Backend</ButtonGit>
+                        <ButtonSite onClick={()=>window.open("https://webexam.vercel.app/", '_blank')}>Website</ButtonSite>
                     </ButtonDiv>
                 </ProjectUnit>
 

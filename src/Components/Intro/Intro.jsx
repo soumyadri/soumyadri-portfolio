@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Soumyadri from '../../Images/soumyadri-linkdin.png';
+import Soumyadri from '../../Images/soumyadri-linkdin-1.jpg';
 
 const PrimaryContainer = styled.div`
     width: 62%;
@@ -16,8 +16,8 @@ const PrimaryContainer = styled.div`
 `
 
 const H5 = styled.h5`
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     color: #3b3939;
     margin: 8px;
     margin-top: 28%;
@@ -70,7 +70,7 @@ const H4 = styled.h2`
 const Img = styled.img`
     width: 95%;
     animation-name: animation1;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 
     @keyframes animation1 {
         from {opacity: 0;}
@@ -110,7 +110,7 @@ export const Intro = () => {
                 <H5>Hi</H5>
                 <H2>I'm <span style={{color: "#942828"}}>Soumyadri</span></H2>
                 <H4>Full Stack Web Developer</H4>
-                <Button onClick={()=>window.open("https://www.canva.com/design/DAEigNO6FIs/DCwM_hzWddQ_-g2Vpfn9sA/view?utm_content=DAEigNO6FIs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton", '_blank')}>View Resume</Button>
+                <Button onClick={()=>window.open("https://drive.google.com/file/d/1tpWd0by3nPZV31OmHVYBVHnMHCHSwyWS/view", '_blank')}>View Resume</Button>
             </div>
             <div>
                 <Img src={Soumyadri} alt="soumyadri das photo" loading="lazy" />

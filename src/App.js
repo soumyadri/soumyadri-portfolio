@@ -15,7 +15,7 @@ function App() {
       <About />
       <Skill />
       <Project />
-      <Github />
+      {/* <Github /> */}
       <FooterComponent />
     </div>
   );
