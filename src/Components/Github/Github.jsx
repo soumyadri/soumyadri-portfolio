@@ -1,5 +1,5 @@
 import React from 'react';
-import Git from '../../Images/gitContribution.png';
+import Git from '../../Images/githubContribution.png';
 import styled from 'styled-components';
 import LazyLoad from 'react-lazyload';
 

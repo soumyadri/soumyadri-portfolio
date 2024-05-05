@@ -110,7 +110,7 @@ export const Intro = () => {
                 <H5>Hi</H5>
                 <H2>I'm <span style={{color: "#942828"}}>Soumyadri</span></H2>
                 <H4>Full Stack Web Developer</H4>
-                <Button onClick={()=>window.open("https://drive.google.com/file/d/1tpWd0by3nPZV31OmHVYBVHnMHCHSwyWS/view", '_blank')}>View Resume</Button>
+                <Button onClick={()=>window.open("https://drive.google.com/file/d/1fU2h0wIrEcNYoFrrH0i02PHV5VLRjbMA/view", '_blank')}>View Resume</Button>
             </div>
             <div>
                 <Img src={Soumyadri} alt="soumyadri das photo" loading="lazy" />
